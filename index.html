@@ -1,351 +1,560 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oro blanco en la Puna: el mapa del litio argentino</title>
-    <style>
-      body {
-        font-family: "Georgia", serif;
-        line-height: 1.6;
-        margin: 0;
-        background: #f9f9f9;
-        color: #333;
-      }
-      header {
-        background: linear-gradient(135deg, #3c8d40, #6fbf73);
-        color: #fff;
-        padding: 40px 20px;
-        text-align: center;
-      }
-      header h1 {
-        font-size: 2.8em;
-        margin: 0;
-      }
-      header p {
-        margin-top: 10px;
-        font-size: 1.2em;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      main {
-        max-width: 1000px;
-        margin: 30px auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-      section {
-        margin-bottom: 40px;
-      }
-      section h2 {
-        font-size: 1.6em;
-        color: #2c6e49;
-        border-left: 6px solid #6fbf73;
-        padding-left: 10px;
-        margin-bottom: 15px;
-      }
-      section p {
-        text-align: justify;
-      }
-      img {
-        width: 100%;
-        border-radius: 10px;
-        margin: 15px 0;
-      }
-      ul {
-        margin-left: 20px;
-      }
-      footer {
-        background: #2c6e49;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 0.9em;
-        margin-top: 40px;
-      }
-      a {
-        color: #ffd700;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      .fuentes li {
-        margin-bottom: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Oro blanco en la Puna: el mapa del litio argentino</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oro blanco en la Puna: el mapa del litio argentino</title>
+  <style>
+    body {
+      font-family: 'Merriweather', Georgia, serif;
+      line-height: 1.6;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3c8d40, #6fbf73);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 1.6em;
+      color: #2c6e49;
+      border-left: 6px solid #6fbf73;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      text-align: justify;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 15px 0;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      background: #2c6e49;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .fuentes li {
+      margin-bottom: 8px;
+    }
+  
+    #li{
+    
+  color: inherit; /* Hereda el color del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Opcional: si querés mantener efecto hover */
+#li:hover  {
+  text-decoration: underline; /* Subrayado solo al pasar el mouse */
+  color: rgb(0, 4, 255);
+
+    }
+  
+   ::selection{
+    background-color: #004c8a;
+    color: #ffffff;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Oro blanco en la Puna: el mapa del <a href="https://es.wikipedia.org/wiki/Litio" id="li">litio argentino</a></h1>
+    <p>
+      Argentina custodia una porción estratégica del “triángulo del litio”. Es
+      un recurso no renovable que se concentra, sobre todo, en salares de
+      altura del NOA. Aquí, cómo se forma, dónde está, para qué se usa, cuánto
+      vale hoy y qué dicen las leyes, las regalías y las comunidades que viven
+      en los territorios del litio.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Qué es y cómo se forma</h2>
       <p>
-        Argentina custodia una porción estratégica del “triángulo del litio”. Es
-        un recurso no renovable que se concentra, sobre todo, en salares de
-        altura del NOA. Aquí, cómo se forma, dónde está, para qué se usa, cuánto
-        vale hoy y qué dicen las leyes, las regalías y las comunidades que viven
-        en los territorios del litio.
+        El litio (Li) es el metal sólido más liviano de la tabla periódica. En
+        estado natural nunca se encuentra aislado, sino combinado con otros
+        minerales y sales. En Argentina, su principal fuente son las
+        <strong>salmueras de salares de altura</strong>: lagunas salinas
+        ubicadas entre los 3.000 y 4.500 metros sobre el nivel del mar, en un
+        entorno árido donde la evaporación supera ampliamente a las
+        precipitaciones.
       </p>
-    </header>
+      <p>
+        La historia de esos depósitos comienza hace millones de años. Por
+        <strong>meteorización e hidrotermalismo</strong>, el litio se libera
+        de rocas ígneas y volcánicas. Las cuencas cerradas —sin desagüe al
+        mar— lo concentran en acuíferos salinos. Con el tiempo geológico, esas
+        aguas se enriquecen en sales y terminan formando los salares que hoy
+        son explotados.
+      </p>
+      <p>
+        El método más difundido es la <strong>evaporación solar</strong>:
+        bombear la salmuera y dejarla reposar en piletones durante meses o
+        años. La intensa radiación evapora el agua y aumenta la concentración
+        de litio, que luego se procesa en forma de
+        <em>carbonato de litio</em> o <em>cloruro de litio</em>. Es un
+        procedimiento económico, pero lento y dependiente del clima.
+      </p>
+      <img
+        src="https://dialogue.earth/content/uploads/2024/10/Arcadium-planta-litio_Salar-Hombre-Muerto_Catamarca_Argentina_Maria-Paula-Gaido_Ruido-thumbnail.jpg"
+        alt="Salar de litio argentino" />
+    </section>
 
-    <main>
-      <section>
-        <h2>Qué es y cómo se forma</h2>
-        <p>
-          El litio (Li) es el metal sólido más liviano de la tabla periódica. En
-          estado natural nunca se encuentra aislado, sino combinado con otros
-          minerales y sales. En Argentina, su principal fuente son las
-          <strong>salmueras de salares de altura</strong>: lagunas salinas
-          ubicadas entre los 3.000 y 4.500 metros sobre el nivel del mar, en un
-          entorno árido donde la evaporación supera ampliamente a las
-          precipitaciones.
-        </p>
-        <p>
-          La historia de esos depósitos comienza hace millones de años. Por
-          <strong>meteorización e hidrotermalismo</strong>, el litio se libera
-          de rocas ígneas y volcánicas. Las cuencas cerradas —sin desagüe al
-          mar— lo concentran en acuíferos salinos. Con el tiempo geológico, esas
-          aguas se enriquecen en sales y terminan formando los salares que hoy
-          son explotados.
-        </p>
-        <p>
-          El método más difundido es la <strong>evaporación solar</strong>:
-          bombear la salmuera y dejarla reposar en piletones durante meses o
-          años. La intensa radiación evapora el agua y aumenta la concentración
-          de litio, que luego se procesa en forma de
-          <em>carbonato de litio</em> o <em>cloruro de litio</em>. Es un
-          procedimiento económico, pero lento y dependiente del clima.
-        </p>
-        <img
-          src="https://dialogue.earth/content/uploads/2024/10/Arcadium-planta-litio_Salar-Hombre-Muerto_Catamarca_Argentina_Maria-Paula-Gaido_Ruido-thumbnail.jpg"
-          alt="Salar de litio argentino"
-        />
-      </section>
+    <section>
+      <h2>Dónde está (y quién produce)</h2>
+      <p>
+        Argentina comparte junto a Chile y Bolivia el famoso
+        <strong>“Triángulo del Litio”</strong>, un triángulo geográfico que
+        concentra más de la mitad de los recursos mundiales de este metal
+        estratégico.
+      </p>
+      <ul>
+        <li><strong>Jujuy:</strong> Salares de Olaroz y Cauchari.</li>
+        <li>
+          <strong>Salta:</strong> Proyectos en Sal de Vida, Rincón y
+          Centenario–Ratones.
+        </li>
+        <li>
+          <strong>Catamarca:</strong> Salar del Hombre Muerto, explotado desde
+          los años 90.
+        </li>
+      </ul>
+      <p>
+        Hoy, el país cuenta con
+        <strong>6 proyectos en producción y más de 40 en exploración o
+          construcción</strong>. Argentina es el <strong>quinto productor mundial</strong>, con
+        chances de escalar posiciones si se concretan los proyectos en
+        desarrollo.
+      </p>
+    </section>
 
-      <section>
-        <h2>Dónde está (y quién produce)</h2>
-        <p>
-          Argentina comparte junto a Chile y Bolivia el famoso
-          <strong>“Triángulo del Litio”</strong>, un triángulo geográfico que
-          concentra más de la mitad de los recursos mundiales de este metal
-          estratégico.
-        </p>
-        <ul>
-          <li><strong>Jujuy:</strong> Salares de Olaroz y Cauchari.</li>
-          <li>
-            <strong>Salta:</strong> Proyectos en Sal de Vida, Rincón y
-            Centenario–Ratones.
-          </li>
-          <li>
-            <strong>Catamarca:</strong> Salar del Hombre Muerto, explotado desde
-            los años 90.
-          </li>
-        </ul>
-        <p>
-          Hoy, el país cuenta con
-          <strong
-            >6 proyectos en producción y más de 40 en exploración o
-            construcción</strong
-          >. Argentina es el <strong>quinto productor mundial</strong>, con
-          chances de escalar posiciones si se concretan los proyectos en
-          desarrollo.
-        </p>
-      </section>
+    <section>
+      <h2>Características del recurso argentino</h2>
+      <p>
+        <strong>Origen:</strong> salmueras de salares, más baratas de procesar
+        que las pegmatitas australianas.
+      </p>
+      <p>
+        <strong>Ventajas:</strong> costos operativos bajos, abundante
+        radiación solar, reservas de escala mundial.
+      </p>
+      <p>
+        <strong>Limitaciones:</strong> procesos dependientes del clima y
+        presión sobre los recursos hídricos, en ecosistemas muy frágiles.
+      </p>
+    </section>
 
-      <section>
-        <h2>Características del recurso argentino</h2>
-        <p>
-          <strong>Origen:</strong> salmueras de salares, más baratas de procesar
-          que las pegmatitas australianas.
-        </p>
-        <p>
-          <strong>Ventajas:</strong> costos operativos bajos, abundante
-          radiación solar, reservas de escala mundial.
-        </p>
-        <p>
-          <strong>Limitaciones:</strong> procesos dependientes del clima y
-          presión sobre los recursos hídricos, en ecosistemas muy frágiles.
-        </p>
-      </section>
+    <section>
+      <h2>Usos e importancia</h2>
+      <p>
+        El litio es sinónimo de <strong>transición energética</strong>. Su
+        mayor aplicación es en <strong>baterías de ion-litio</strong>, que
+        alimentan celulares, notebooks, autos eléctricos y sistemas de
+        almacenamiento de energías renovables.
+      </p>
+      <p>
+        También se emplea en
+        <strong>cerámicos, vidrios especiales, grasas lubricantes, medicamentos
+          psiquiátricos y sistemas de aire acondicionado</strong>. Por eso, la demanda mundial crece de forma
+        exponencial, impulsada
+        por fabricantes de autos que electrifican sus flotas.
+      </p>
+    </section>
 
-      <section>
-        <h2>Usos e importancia</h2>
-        <p>
-          El litio es sinónimo de <strong>transición energética</strong>. Su
-          mayor aplicación es en <strong>baterías de ion-litio</strong>, que
-          alimentan celulares, notebooks, autos eléctricos y sistemas de
-          almacenamiento de energías renovables.
-        </p>
-        <p>
-          También se emplea en
-          <strong
-            >cerámicos, vidrios especiales, grasas lubricantes, medicamentos
-            psiquiátricos y sistemas de aire acondicionado</strong
-          >. Por eso, la demanda mundial crece de forma exponencial, impulsada
-          por fabricantes de autos que electrifican sus flotas.
-        </p>
-      </section>
+    <section>
+      <h2>Valorización: precios y comercio</h2>
+      <p>
+        El mercado del litio es volátil. En 2022, el carbonato de litio superó
+        los <strong>USD 80.000 por tonelada</strong>, para luego caer en
+        2023–2024. Al <strong>28 de agosto de 2025</strong>, el precio en
+        China rondaba los <strong>80.000 CNY/ton (USD 11.000)</strong>, con
+        repunte por el cierre de minas poco rentables y la sostenida demanda
+        de autos eléctricos.
+      </p>
+      <p>
+        En Argentina, las exportaciones de litio alcanzaron
+        <strong>USD 645 millones en 2024</strong>. Con la entrada de nuevos
+        proyectos, se espera que esa cifra se <strong>triplique</strong> en
+        pocos años.
+      </p>
+    </section>
 
-      <section>
-        <h2>Valorización: precios y comercio</h2>
-        <p>
-          El mercado del litio es volátil. En 2022, el carbonato de litio superó
-          los <strong>USD 80.000 por tonelada</strong>, para luego caer en
-          2023–2024. Al <strong>28 de agosto de 2025</strong>, el precio en
-          China rondaba los <strong>80.000 CNY/ton (USD 11.000)</strong>, con
-          repunte por el cierre de minas poco rentables y la sostenida demanda
-          de autos eléctricos.
-        </p>
-        <p>
-          En Argentina, las exportaciones de litio alcanzaron
-          <strong>USD 645 millones en 2024</strong>. Con la entrada de nuevos
-          proyectos, se espera que esa cifra se <strong>triplique</strong> en
-          pocos años.
-        </p>
-      </section>
+    <section>
+      <h2>Marco legal: provincias vs Nación</h2>
+      <p>
+        La Constitución establece que los
+        <strong>recursos minerales pertenecen a las provincias</strong>. Por
+        lo tanto, Jujuy, Salta y Catamarca otorgan concesiones y cobran
+        regalías.
+      </p>
+      <p>
+        La <strong>Ley 24.196 de Inversiones Mineras</strong> (1993) sigue
+        siendo la norma central: asegura
+        <strong>estabilidad fiscal por 30 años</strong>, deducciones
+        arancelarias y beneficios a empresas.
+      </p>
+      <p>
+        Algunas provincias avanzaron con un modelo mixto, creando
+        <strong>empresas estatales</strong> que se asocian a privados.
+        Ejemplo: <strong>JEMSE (Jujuy)</strong>, con hasta un 8,5% en algunos
+        proyectos.
+      </p>
+    </section>
 
-      <section>
-        <h2>Marco legal: provincias vs Nación</h2>
-        <p>
-          La Constitución establece que los
-          <strong>recursos minerales pertenecen a las provincias</strong>. Por
-          lo tanto, Jujuy, Salta y Catamarca otorgan concesiones y cobran
-          regalías.
-        </p>
-        <p>
-          La <strong>Ley 24.196 de Inversiones Mineras</strong> (1993) sigue
-          siendo la norma central: asegura
-          <strong>estabilidad fiscal por 30 años</strong>, deducciones
-          arancelarias y beneficios a empresas.
-        </p>
-        <p>
-          Algunas provincias avanzaron con un modelo mixto, creando
-          <strong>empresas estatales</strong> que se asocian a privados.
-          Ejemplo: <strong>JEMSE (Jujuy)</strong>, con hasta un 8,5% en algunos
-          proyectos.
-        </p>
-      </section>
+    <section>
+      <h2>Regalías, impuestos y renta</h2>
+      <p>
+        <strong>Regalías provinciales:</strong> hasta el 3% del “valor boca de
+        mina” (generalmente menor al valor de mercado).
+      </p>
+      <p><strong>Derechos de exportación:</strong> 4,5% para el litio.</p>
+      <p>
+        <strong>Otros tributos:</strong> IVA, Ganancias, Ingresos Brutos. La
+        carga fiscal es baja comparada con otros países, lo que favorece
+        inversiones pero genera debate sobre la
+        <strong>captación de renta y beneficios locales</strong>.
+      </p>
+    </section>
 
-      <section>
-        <h2>Regalías, impuestos y renta</h2>
-        <p>
-          <strong>Regalías provinciales:</strong> hasta el 3% del “valor boca de
-          mina” (generalmente menor al valor de mercado).
-        </p>
-        <p><strong>Derechos de exportación:</strong> 4,5% para el litio.</p>
-        <p>
-          <strong>Otros tributos:</strong> IVA, Ganancias, Ingresos Brutos. La
-          carga fiscal es baja comparada con otros países, lo que favorece
-          inversiones pero genera debate sobre la
-          <strong>captación de renta y beneficios locales</strong>.
-        </p>
-      </section>
+    <section>
+      <h2>Ambiente y comunidades</h2>
+      <p>
+        El litio es promesa de desarrollo, pero también fuente de
+        <strong>conflictos socioambientales</strong>. La evaporación de
+        salmueras demanda grandes volúmenes de agua, lo que puede alterar
+        acuíferos de altura en regiones áridas.
+      </p>
+      <p>
+        Comunidades indígenas denuncian que no siempre se respeta su derecho a
+        la <strong>consulta previa e informada</strong> (Convenio 169 de la
+        OIT). En Jujuy, Salta y Catamarca hubo marchas, amparos judiciales y
+        debates legislativos.
+      </p>
+      <p>
+        ONGs y universidades reclaman
+        <strong>estudios hidrológicos independientes, monitoreo público y
+          transparencia en regalías</strong>, para equilibrar desarrollo económico con protección ambiental.
+      </p>
+      <img src="https://dialogue.earth/content/uploads/2019/03/lithium-Jujuy.jpg" />
+    </section>
 
-      <section>
-        <h2>Ambiente y comunidades</h2>
-        <p>
-          El litio es promesa de desarrollo, pero también fuente de
-          <strong>conflictos socioambientales</strong>. La evaporación de
-          salmueras demanda grandes volúmenes de agua, lo que puede alterar
-          acuíferos de altura en regiones áridas.
-        </p>
-        <p>
-          Comunidades indígenas denuncian que no siempre se respeta su derecho a
-          la <strong>consulta previa e informada</strong> (Convenio 169 de la
-          OIT). En Jujuy, Salta y Catamarca hubo marchas, amparos judiciales y
-          debates legislativos.
-        </p>
-        <p>
-          ONGs y universidades reclaman
-          <strong
-            >estudios hidrológicos independientes, monitoreo público y
-            transparencia en regalías</strong
-          >, para equilibrar desarrollo económico con protección ambiental.
-        </p>
-        <img
-          src="https://dialogue.earth/content/uploads/2019/03/lithium-Jujuy.jpg"
-        />
-      </section>
+    <section>
+      <h2>Mirada a futuro</h2>
+      <p>
+        Argentina enfrenta un dilema histórico: puede
+        <strong>escalar la producción</strong> y consolidarse como proveedor
+        global, o apostar a la <strong>industrialización</strong> (fabricación
+        de cátodos, celdas y baterías).
+      </p>
+      <p>
+        La clave será garantizar la
+        <strong>sostenibilidad</strong>: proteger ecosistemas altoandinos,
+        asegurar beneficios locales y cumplir estándares ambientales de talla
+        mundial.
+      </p>
+      <p>
+        El litio puede ser una <strong>materia prima más</strong> o una
+        verdadera <strong>palanca de desarrollo nacional</strong>. La decisión
+        depende de cómo se gestionen hoy los salares que concentran,
+        silenciosamente, la energía del futuro.
+      </p>
+    </section>
+    <section>
+      <!DOCTYPE html>
+      <html lang="es">
 
-      <section>
-        <h2>Mirada a futuro</h2>
-        <p>
-          Argentina enfrenta un dilema histórico: puede
-          <strong>escalar la producción</strong> y consolidarse como proveedor
-          global, o apostar a la <strong>industrialización</strong> (fabricación
-          de cátodos, celdas y baterías).
-        </p>
-        <p>
-          La clave será garantizar la
-          <strong>sostenibilidad</strong>: proteger ecosistemas altoandinos,
-          asegurar beneficios locales y cumplir estándares ambientales de talla
-          mundial.
-        </p>
-        <p>
-          El litio puede ser una <strong>materia prima más</strong> o una
-          verdadera <strong>palanca de desarrollo nacional</strong>. La decisión
-          depende de cómo se gestionen hoy los salares que concentran,
-          silenciosamente, la energía del futuro.
-        </p>
-      </section>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Oro blanco en la Puna: el mapa del litio argentino</title>
+        <style>
+          body {
+            font-family: "Georgia", serif;
+            line-height: 1.6;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+          }
 
-      <section>
-        <h2>Fuentes</h2>
-        <ul class="fuentes">
-          <a
-            href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-lithium.pdf"
-            ><li>USGS – Mineral Commodity Summaries 2025 (Lithium).</li></a
-          >
-          <a
-            href="https://www.argentina.gob.ar/sites/default/files/informe_litio_junio_2025.pdf"
-            ><li>Secretaría de Minería (AR), Informe Litio – junio 2025.</li></a
-          >
-          <a
-            href="https://www.argentina.gob.ar/normativa/nacional/ley-24196-594/actualizacion"
-            ><li>Ley 24.196 de Inversiones Mineras (Infoleg).</li></a
-          >
-          <a
-            href="https://www.argentina.gob.ar/sites/default/files/agosto_2024_-_situacion_impositiva_de_la_mineria_en_argentina_chile_y_peru.pdf"
-            ><li>Argentina.gob.ar – Situación impositiva de la minería.</li></a
-          >
-          <a
-            href="https://www.mineriajujuy.gob.ar/site/detail_news-en.php?id=165"
-            ><li>Gobierno de Jujuy – JEMSE.</li></a
-          >
-          <a
-            href="https://www.igfmining.org/es/argentina-pulling-policy-levers-maximize-lithium-benefits/"
-            ><li>IGF Mining (2024) – Empresas provinciales en litio.</li></a
-          >
-          <a href="https://tradingeconomics.com/commodity/lithium"
-            ><li>
-              Trading Economics – Precio spot del carbonato de litio
-              (28/08/2025).
-            </li></a
-          >
-          <a href="https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_del_Litio"
-            ><li>Wikipedia – Triángulo del Litio.</li></a
-          >
-          <a
-            href="https://es.mongabay.com/2019/02/triangulo-del-litio-salares-bolivia-chile-argentina/"
-            ><li>Noticias ambientales – Contexto socioambiental.</li></a
-          >
-          <a
-            href="https://fund.ar/publicacion/romper-la-inercia-algunas-reflexiones-a-30-anos-de-la-ley-de-inversiones-mineras/"
-            ><li>Fundar – Regalías e impuestos.</li></a
-          >
-          <a
-            href="https://www.caem.com.ar/wp-content/uploads/2023/10/CAEM-recursos-industria-minera-2023.pdf"
-            ><li>CAEM – Regalías e impuestos.</li></a
-          >
-        </ul>
-      </section>
-    </main>
+          header {
+            background: linear-gradient(135deg, #3c8d40, #6fbf73);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+          }
 
-    <footer>
-      © 2025 Revista Energía & Medioambiente | Joaquín Folmer, Gonzalo Saitua y
-      Facundo Pestana
-    </footer>
-  </body>
+          header h1 {
+            font-size: 2.8em;
+            margin: 0;
+          }
+
+          header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+
+          section {
+            margin-bottom: 40px;
+          }
+
+          section h2 {
+            font-size: 1.6em;
+            color: #2c6e49;
+            border-left: 6px solid #6fbf73;
+            padding-left: 10px;
+            margin-bottom: 15px;
+          }
+
+          section p {
+            text-align: justify;
+          }
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+          }
+
+          ul {
+            margin-left: 20px;
+          }
+
+          footer {
+            background: #2c6e49;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            margin-top: 40px;
+          }
+
+          a {
+            color: #0077ff;
+            text-decoration: none;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+
+          .fuentes li {
+            margin-bottom: 8px;
+          }
+
+          .highlight {
+            border-left: 4px solid #6fbf73;
+            padding-left: 15px;
+            color: #555;
+            font-style: italic;
+            margin: 20px 0;
+          }
+        </style>
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      </head>
+
+
+
+      <main>
+        <!-- (Secciones anteriores intactas: formación, localización, usos, etc.) -->
+
+        <section>
+          <h2>Producción en cifras y proyecciones</h2>
+          <p>
+            En 2023 Argentina produjo aproximadamente <strong>26.083 toneladas</strong> de LCE (carbonato
+            equivalente), según datos oficiales.
+            En 2024 ese volumen creció un 62 % hasta alcanzar <strong>74.600
+              toneladas</strong>. Para 2025, las estimaciones de CAEM proyectan
+            entre <strong>130.800 y 131.800 toneladas</strong> de producción, un salto del 75–77
+            %.
+          </p>
+          <div style="text-align:center;">
+            <canvas id="chartProduction"></canvas>
+          </div>
+          <div class="highlight">
+            <p><strong>Capacidad instalada:</strong> alcanzó las 136.500 t LCE anuales tras triplicarse en dos años,
+              impulsada por nuevas plantas como Centenario Ratones (Salta) en joint venture con
+              Eramet–Tsingshan:contentReference[oaicite:3]{index=3}.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Precio del litio: evolución reciente</h2>
+          <p>
+            El precio del carbonato de litio cayó desde los picos de USD 80.000/ton en 2022 hacia niveles entre USD
+            9.000 y 12.500 en 2024. A finales de marzo de 2025, rondaba USD
+            9.650-9.700/t CIF Asia / FOB Sudamérica. A fines de julio, Japón
+            registraba cotizaciones hasta USD 11.233/t en la Bolsa de Guangzhou.
+            Trading Economics confirmó una cotización de aproximadamente <strong>79.650 CNY/ton</strong> (USD ~11.000)
+            el 29 de agosto de 2025.
+          </p>
+          <div style="text-align:center;">
+            <canvas id="chartPrice"></canvas>
+          </div>
+        </section>
+
+        <section>
+          <h2>Innovaciones tecnológicas</h2>
+          <p>
+            Y-TEC, filial de YPF, firmó un acuerdo con la firma israelí XtraLit para probar tecnologías de Extracción
+            Directa de Litio (EDL) en salmueras argentinas.
+            Esta metodología promete mayor eficiencia, menor consumo de agua y una extracción más
+            sostenible.
+          </p>
+        </section>
+
+        <!-- Resto de secciones: legislación, regalías, ambiente, futuro -->
+
+
+      </main>
+
+      <script>
+        const ctxP = document.getElementById('chartProduction').getContext('2d');
+        new Chart(ctxP, {
+          type: 'line',
+          data: {
+            labels: ['2023', '2024', '2025 (est)'],
+            datasets: [{
+              label: 'Producción (toneladas LCE)',
+              data: [26083, 74600, 131000],
+              backgroundColor: 'rgba(60, 142, 64, 0.2)',
+              borderColor: '#3c8d40',
+              borderWidth: 2,
+              fill: true
+            }]
+          },
+          options: {
+            scales: { y: { beginAtZero: true } },
+            responsive: true
+          }
+        });
+
+        const ctxR = document.getElementById('chartPrice').getContext('2d');
+        new Chart(ctxR, {
+          type: 'bar',
+          data: {
+            labels: ['Mar 2025', 'Jul 2025', 'Ago 2025'],
+            datasets: [{
+              label: 'Precio (USD por tonelada)',
+              data: [9650, 11233, 11000],
+              backgroundColor: ['#6fbf73', '#6fbf73', '#6fbf73'],
+            }]
+          },
+          options: {
+            scales: { y: { beginAtZero: true } },
+            responsive: true
+          }
+        });
+      </script>
+
+
+
+    </section>
+    <section>
+      <h2>Fuentes</h2>
+      <ul class="fuentes">
+        <li><a href="https://pubs.usgs.gov/periodicals/mcs2025/mcs2025-lithium.pdf">USGS – Mineral Commodity Summaries
+            2025 (Lithium)</a></li>
+        <li><a href="https://www.argentina.gob.ar/sites/default/files/informe_litio_junio_2025.pdf">Secretaría de
+            Minería (AR), Informe Litio – junio 2025</a></li>
+        <li><a href="https://www.caem.com.ar/wp-content/uploads/2023/10/CAEM-recursos-industria-minera-2023.pdf">CAEM –
+            Recursos y estadísticas de la industria minera</a></li>
+        <li><a href="https://tradingeconomics.com/commodity/lithium">Trading Economics – Precio spot del carbonato de
+            litio</a></li>
+        <li><a
+            href="https://www.reuters.com/markets/commodities/argentina-tripled-lithium-carbonate-production-capacity-last-two-years-2024-07-16/">Reuters
+            – Producción y capacidad instalada de litio</a></li>
+        <li><a href="https://www.cochilco.cl/web/informe-evolucion-precio-del-litio-mayo-de-2025/">Cochilco – Evolución
+            de precios del litio</a></li>
+        <li><a
+            href="https://www.infobae.com/economia/2025/01/12/aunque-el-precio-sigue-estancado-el-litio-sigue-moviendo-produccion-y-operaciones-en-la-argentina/">Infobae
+            – Situación del litio en Argentina</a></li>
+        <li><a
+            href="https://www.lanacion.com.ar/economia/mas-de-us5000-millones-el-oro-y-el-litio-explican-un-nuevo-record-de-exportaciones-mineras-en-2025-nid28072025/">La
+            Nación – Exportaciones de litio</a></li>
+        <li><a href="https://www.argentina.gob.ar/">Argentina.gob.ar – Información oficial de minería</a></li>
+        <li><a
+            href="https://fund.ar/publicacion/romper-la-inercia-algunas-reflexiones-a-30-anos-de-la-ley-de-inversiones-mineras/">Fundar
+            – Regalías e impuestos en minería</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 Revista Energía & Medioambiente | Joaquín Folmer, Gonzalo Saitua y
+    Facundo Pestana
+  </footer>
+</body>
+
 </html>
